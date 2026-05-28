@@ -2,13 +2,18 @@
 
 ![TechWave Banner](/public/assets/images/hero-bg.png)
 
-Welcome to the **TechWave Podcast** repository! This is a state-of-the-art, high-performance web application designed to serve as the digital home for the TechWave podcast. 
+Welcome to the **TechWave Podcast** repository! This is a state-of-the-art, high-performance web application designed to serve as the digital home for the TechWave podcast.
 
 Originally conceived as a static HTML/CSS landing page, this project has been fully migrated into a highly scalable, component-driven architecture using **Next.js 15**, **TypeScript**, and **Tailwind CSS**. It showcases modern web design trends like glassmorphism, dynamic gradients, and responsive layouts tailored to provide an exceptional user experience across all devices.
 
 ---
 
+## Live Demo
+
+[TechWave Podcast](https://classical-tech-wave-podcast.vercel.app/)
+
 ## 🌟 Table of Contents
+
 - [Key Features](#-key-features)
 - [Architecture & Tech Stack](#-architecture--tech-stack)
 - [Design Philosophy](#-design-philosophy)
@@ -26,10 +31,10 @@ Originally conceived as a static HTML/CSS landing page, this project has been fu
 - **Blazing Fast Performance**: Utilizes Next.js App Router and React Server Components for optimal load times and top-tier SEO performance.
 - **Fluid Responsive Layout**: Flawlessly adapts from the smallest mobile screens up to ultrawide 4K monitors using Tailwind's breakpoint system.
 - **Component-Driven Architecture**: The UI is broken down into modular, reusable, and easily maintainable React components (`Header`, `Hero`, `Episodes`, etc.).
-- **Rich Media Integrations**: 
+- **Rich Media Integrations**:
   - Seamlessly embedded YouTube iframes for episode playback without leaving the site.
   - Highly optimized image delivery and caching via the Next.js `<Image />` component.
-- **Interactive UI/UX Elements**: 
+- **Interactive UI/UX Elements**:
   - Glassmorphic navigation bars with backdrop blurs (`backdrop-blur`).
   - Smooth animated gradients on buttons and hover states.
   - Interactive mobile hamburger menu managing state via React `useState`.
@@ -51,8 +56,9 @@ This project leverages the latest industry standards in front-end development:
 
 ## 🎨 Design Philosophy
 
-The application utilizes a dark-mode first aesthetic built on a deep purple canvas (`bg-[#1a0b2e]`). 
+The application utilizes a dark-mode first aesthetic built on a deep purple canvas (`bg-[#1a0b2e]`).
 Highlights and calls-to-action are driven by a dynamic 3-stop gradient:
+
 - **Neon Yellow** (`#f7e93f`)
 - **Vibrant Pink** (`#fb09b4`)
 - **Deep Violet** (`#9100f8`)
@@ -109,23 +115,27 @@ Follow these instructions to get a copy of the project up and running on your lo
 ### Prerequisites
 
 You will need **Node.js** installed on your system.
+
 - **Node.js** 18.17.0 or later.
 - **npm** (comes bundled with Node.js)
 
 ### Installation & Setup
 
 1. **Clone the repository**:
+
    ```bash
    git clone https://github.com/your-username/techwave.git
    cd techwave
    ```
 
 2. **Install dependencies**:
+
    ```bash
    npm install
    ```
 
 3. **Start the development server**:
+
    ```bash
    npm run dev
    ```
@@ -138,13 +148,16 @@ You will need **Node.js** installed on your system.
 ## ⚙️ Customization Guide
 
 ### Adding a New Episode
+
 To update the featured episodes on the homepage:
+
 1. Navigate to `src/components/Episodes.tsx`.
 2. Locate the `<iframe>` tag you wish to update.
 3. Replace the `src` attribute with your new YouTube embed URL (ensure it retains the `embed/` path).
 4. Update the corresponding `<h4>` title and `<p>` description tags directly below the iframe.
 
 ### Modifying Global Styles
+
 Global overrides and custom CSS classes (like the `.btn` gradient animation) are located in `src/app/globals.css`. By leveraging Tailwind's `@layer components` directive, we keep the JSX clean while reusing complex background animations across multiple buttons.
 
 ---
@@ -164,7 +177,7 @@ For more details, check out the [Next.js deployment documentation](https://nextj
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! 
+Contributions, issues, and feature requests are welcome!
 If you have suggestions for improving this podcast landing page, feel free to open a Pull Request.
 
 ## 📝 License
