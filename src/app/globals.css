@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@layer base {
+  body {
+    background-color: rgba(35, 14, 61, 1);
+    color: white;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply flex flex-row justify-center items-center w-max gap-1 py-3 px-4 rounded-[10000px] transition-all duration-700 cursor-pointer text-white;
+    background: linear-gradient(
+      47.64deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    );
+    background-size: 200% auto;
+  }
+  
+  .btn:hover {
+    background-position: right center;
+  }
+
+  .gradient-text {
+    background: linear-gradient(
+      47.64deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
